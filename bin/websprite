@@ -1,0 +1,181 @@
+#!/usr/bin/perl
+###################################################################################################
+# Copyright 2013/2014 by Marcel Greter
+# This file is part of OCBNET-WebSprite (GPL3)
+####################################################################################################
+
+use strict;
+use warnings;
+
+# load modules
+use File::Slurp;
+
+use OCBNET::CSS3::Styles::WebSprite;
+
+# parse options
+use Pod::Usage;
+use Getopt::Long;
+use Cwd qw(realpath);
+use File::Basename;
+
+# init options
+my $compress = undef;
+
+###################################################################################################
+
+sub range
+{
+
+	my ($value, $from, $to, $max) = @_;
+
+	my $val = int(($to - $from) / 9 * $value + $from + 0.5);
+
+	return $val < $max ? $val : $max;
+
+}
+
+###################################################################################################
+
+sub advpng
+{
+}
+
+sub advdef
+{
+}
+
+# load 3rd party module
+use File::Which qw(which);
+
+# override core glob (case insensitive)
+use File::Glob qw(:globally :nocase bsd_glob);
+
+
+
+###################################################################################################
+#optimizers('pngopt', 'optipng', \ &optipng, 1) if $ENV{'WEBMERGE_OPTIPNG'};
+#optimizers('pngopt', 'advpng', \ &advpng, 2) if $ENV{'WEBMERGE_ADVPNG'};
+#optimizers('pngopt', 'advdef', \ &advdef, 2) if $ENV{'WEBMERGE_ADVDEF'};
+###################################################################################################
+
+# define a sub to print out the version (mimic behaviour of node.js blessc)
+sub version { print "spriteset $OCBNET::WebSprite::VERSION (CSS sprite-set generator) [Perl]"; exit 0; };
+
+my $debug = undef;
+
+# get options
+GetOptions (
+	'compress|x:i' => \$compress,
+	'help|h' => sub { pod2usage(1); },
+	'version|v' => \ &version,
+	'debug|d:i' => \ $debug,
+);
+
+$debug = defined $debug && $debug == 0 ? 1 : $debug || 0;
+$compress = defined $compress && $compress == 0 ? 1 : $compress || 0;
+
+sub cmdline
+{
+
+	if ($_[0] eq 'optipng')
+	{
+		# get the optimization level (1 to 9)
+		my $olvl = range($compress, 0.5, 6.5, 9);
+		# return commandline for process
+		return sprintf("%s -o%d --quiet \"%s\"", $_[1], $olvl, $_[2]);
+	}
+	elsif ($_[0] eq 'advpng')
+	{
+		# get the optimization level (1 to 4)
+		my $lvl = range($compress, 1, 5, 4);
+		# return commandline for process
+		return sprintf("%s -z -%d --quiet \"%s\"", $_[1], $lvl, $_[2]);
+	}
+	elsif ($_[0] eq 'advdef')
+	{
+		# get the optimization level (1 to 4)
+		my $lvl = range($compress, 1, 5, 4);
+		# return commandline for process
+		return sprintf("%s -z -%d --quiet \"%s\"", $_[1], $lvl, $_[2]);
+	}
+}
+
+
+use File::chdir;
+
+my $css;
+my $opt = [];
+
+my $spriteset = OCBNET::WebSprite->new;
+
+# process css files
+if (scalar(@ARGV))
+{
+	foreach my $file (@ARGV)
+	{
+		my $data = read_file($file);
+		$CWD = dirname $file;
+		$css = $spriteset->create(\ $data, $opt);
+	}
+}
+# stdin
+else
+{
+	$css = $spriteset->create(join("", <>), $opt);
+}
+
+if ($compress)
+{
+	my $redo = 1;
+	foreach my $exe ('optipng', 'advpng', 'advdef')
+	{
+		# glob finds the executable
+		my @exes = which($exe) || bsd_glob($exe);
+		# test if we have a valid result that exists and is executable
+		next unless scalar @exes == 1 && -e $exes[0] && -x _ && ! -d _;
+		# found a program
+		foreach my $path (@{$opt})
+		{
+			my $cmdline = cmdline($exe, $exes[0], $path);
+			warn $cmdline if $debug;
+			system $cmdline and warn "error on $cmdline";
+		}
+		last if $redo -- > 0;
+	}
+}
+
+print $css->render;
+
+####################################################################################################
+####################################################################################################
+
+__END__
+
+=head1 NAME
+
+spriteset - CSS spriteset generator
+
+=head1 SYNOPSIS
+
+spriteset [options] [filepath]
+
+ Options:
+   -v, --version      print version
+   -h, --help         print this help
+   -x, --compress=[0-9]     compress spritesets
+
+=head1 OPTIONS
+
+=over 8
+
+=item B<-help>
+
+Print a brief help message with options and exits.
+
+=back
+
+=head1 DESCRIPTION
+
+B<This program> is a CSS spriteset generator from annotated css.
+
+=cut
