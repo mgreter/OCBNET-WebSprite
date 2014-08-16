@@ -27,6 +27,13 @@ Build test
 Build install
 ```
 
+Or, if [cpanminus](http://search.cpan.org/~miyagawa/App-cpanminus/) is available:
+
+```
+cpanm git://github.com/mgreter/OCBNET-CSS3.git
+cpanm git://github.com/mgreter/OCBNET-WebSprite.git
+```
+
 You need [Strawberry Perl](http://strawberryperl.com/) and
 [GraphicsMagick](http://www.graphicsmagick.org/download.html) on
 Windows.
