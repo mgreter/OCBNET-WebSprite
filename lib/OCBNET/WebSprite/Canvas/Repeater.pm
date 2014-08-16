@@ -6,15 +6,14 @@
 ####################################################################################################
 package OCBNET::WebSprite::Canvas::Repeater;
 ####################################################################################################
+our $VERSION = "1.0.0";
+####################################################################################################
 
 use strict;
 use warnings;
 use POSIX qw(ceil);
 
 ###################################################################################################
-
-# define our version string
-BEGIN { $OCBNET::WebSprite::Canvas::Repeater = "0.9.0"; }
 
 # load exporter and inherit from it
 BEGIN { use Exporter qw(); our @ISA = qw(Exporter); }
@@ -50,10 +49,10 @@ sub draw
 	my $repeat_height = shift;
 
 	# assertion for valid dimensions
-	return if $sprite_width <= 0;
-	return if $sprite_height <= 0;
-	return if $canvas_width <= 0;
-	return if $canvas_height <= 0;
+	# return if $sprite_width <= 0;
+	# return if $sprite_height <= 0;
+	# return if $canvas_width <= 0;
+	# return if $canvas_height <= 0;
 
 	# paint at actual sprite position exactly once
 	my $stop_x = (my $start_x = $sprite_left) + $sprite_width;
@@ -190,17 +189,19 @@ sub repeater
 				# only repeat in fixed area
 				if ($sprite->isFixedX)
 				{
-					$canvas[0] = $offset->{'x'};
-					$sprite[0] = $canvas[0] + $sprite->paddingLeft;
-					$canvas[2] = $offset->{'x'} + $sprite->outerWidth;
+					# make drawable canvas area smaller on x axis
+					$canvas[0] = $offset->{'x'}; # canvas_left
+					$sprite[0] = $canvas[0] + $sprite->paddingLeft; # sprite_left
+					$canvas[2] = $offset->{'x'} + $sprite->outerWidth; # sprite_width
 				}
 
 				# only repeat in fixed area
 				if ($sprite->isFixedY)
 				{
-					$canvas[1] = $offset->{'y'};
-					$sprite[1] = $canvas[1] + $sprite->paddingTop;
-					$canvas[3] = $offset->{'y'} + $sprite->outerHeight;
+					# make drawable canvas area smaller on y axis
+					$canvas[1] = $offset->{'y'}; # canvas_left
+					$sprite[1] = $canvas[1] + $sprite->paddingTop; # sprite_top
+					$canvas[3] = $offset->{'y'} + $sprite->outerHeight; # sprite_height
 				}
 
 				# draw into canvas

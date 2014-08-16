@@ -6,14 +6,13 @@
 ####################################################################################################
 package OCBNET::WebSprite::Canvas::Distribute;
 ####################################################################################################
+our $VERSION = "1.0.0";
+####################################################################################################
 
 use strict;
 use warnings;
 
 ###################################################################################################
-
-# define our version string
-BEGIN { $OCBNET::WebSprite::Canvas::Distribute = "0.9.0"; }
 
 # load exporter and inherit from it
 BEGIN { use Exporter qw(); our @ISA = qw(Exporter); }
@@ -40,6 +39,9 @@ sub distribute
 	# to put the sprite on the edge/stack area. Both padding will
 	# be counted (outerWidth - width > threshold).
 	my $threshold = 40;
+
+	# get debug option from config hash
+	my $debug = $self->{'config'}->{'debug'};
 
 	##########################################################
 
@@ -181,9 +183,9 @@ sub distribute
 		# only print header warning once
 		unless ($unsupported)
 		{
-			warn "\nWARNING: Some sprites are configured to be included within\n" .
-			"a spriteset, but are not possible to distribute to any area, due\n" .
-			"to invalid styles (like repeating or beeing flexible in both axes)!\n\n";
+			warn "\nWARNING: Some sprites have been configured to be included within a\n" .
+			     "spriteset, but are not possible to distribute to any area, due to\n" .
+			     "invalid styles (like repeating and/or beeing flexible in both axes)!\n\n";
 		}
 		# print each unsupported sprite to the console
 		warn sprintf "  url(%s) enc(%s/%s), rep(%s/%s), pos(%s/%s)\n",
@@ -197,7 +199,7 @@ sub distribute
 
 	# wait a second make user more
 	# aware that some problem exists
-	sleep 3 if $unsupported;
+	sleep 1 if $unsupported && $debug;
 
 }
 # EO sub distribute

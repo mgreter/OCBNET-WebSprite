@@ -8,41 +8,16 @@ use strict;
 use warnings;
 
 # load modules
-use File::Slurp;
-
-use OCBNET::CSS3::Styles::WebSprite;
-
-# parse options
 use Pod::Usage;
 use Getopt::Long;
-use Cwd qw(realpath);
+use File::Slurp;
+use File::chdir;
 use File::Basename;
 
-# init options
-my $compress = undef;
+# load the main websprite module
+use OCBNET::CSS3::Styles::WebSprite;
 
 ###################################################################################################
-
-sub range
-{
-
-	my ($value, $from, $to, $max) = @_;
-
-	my $val = int(($to - $from) / 9 * $value + $from + 0.5);
-
-	return $val < $max ? $val : $max;
-
-}
-
-###################################################################################################
-
-sub advpng
-{
-}
-
-sub advdef
-{
-}
 
 # load 3rd party module
 use File::Which qw(which);
@@ -50,18 +25,16 @@ use File::Which qw(which);
 # override core glob (case insensitive)
 use File::Glob qw(:globally :nocase bsd_glob);
 
-
-
-###################################################################################################
-#optimizers('pngopt', 'optipng', \ &optipng, 1) if $ENV{'WEBMERGE_OPTIPNG'};
-#optimizers('pngopt', 'advpng', \ &advpng, 2) if $ENV{'WEBMERGE_ADVPNG'};
-#optimizers('pngopt', 'advdef', \ &advdef, 2) if $ENV{'WEBMERGE_ADVDEF'};
 ###################################################################################################
 
-# define a sub to print out the version (mimic behaviour of node.js blessc)
+# define a sub to print out the version and exit
 sub version { print "spriteset $OCBNET::WebSprite::VERSION (CSS sprite-set generator) [Perl]"; exit 0; };
 
-my $debug = undef;
+###################################################################################################
+
+# init options
+my $debug = 0;
+my $compress = 0;
 
 # get options
 GetOptions (
@@ -71,12 +44,30 @@ GetOptions (
 	'debug|d:i' => \ $debug,
 );
 
-$debug = defined $debug && $debug == 0 ? 1 : $debug || 0;
-$compress = defined $compress && $compress == 0 ? 1 : $compress || 0;
+# initialize options if they are not defined
+# $debug = defined $debug && $debug == 0 ? 1 : $debug || 0;
+# $compress = defined $compress && $compress == 0 ? 1 : $compress || 0;
+
+###################################################################################################
+# calulcate value from opimizer range
+###################################################################################################
+
+sub range
+{
+	# get options for range calculation
+	my ($value, $from, $to, $max) = @_;
+	# expand/contract from 0-9 into from-to range
+	my $val = int(($to - $from) / 9 * $value + $from + 0.5);
+	# assert for range maximum
+	return $val < $max ? $val : $max;
+}
+
+###################################################################################################
+# get commandline argument for optimizers
+###################################################################################################
 
 sub cmdline
 {
-
 	if ($_[0] eq 'optipng')
 	{
 		# get the optimization level (1 to 9)
@@ -100,49 +91,74 @@ sub cmdline
 	}
 }
 
+###################################################################################################
+# main program - execute websprite
+###################################################################################################
 
-use File::chdir;
+# main program variables
+my $css; my $files = [];
 
-my $css;
-my $opt = [];
-
+# create the main websprite object
 my $spriteset = OCBNET::WebSprite->new;
 
 # process css files
 if (scalar(@ARGV))
 {
+	# process all input files
 	foreach my $file (@ARGV)
 	{
+		# read file from given filepath
+		# relative to current directory
 		my $data = read_file($file);
+		# change current directory
+		# urls are relative to css
 		$CWD = dirname $file;
-		$css = $spriteset->create(\ $data, $opt);
+		# pass the whole file data and process
+		$css = $spriteset->create(\ $data, $files);
 	}
 }
-# stdin
+# or from stdin
 else
 {
-	$css = $spriteset->create(join("", <>), $opt);
+	# read the whole stdin into memory and process
+	$css = $spriteset->create(join("", <>), $files);
 }
+
+###################################################################################################
+# after main program - compress sprites
+###################################################################################################
 
 if ($compress)
 {
+	# maybe do mutliple optimization runs
+	# will call optimizers after each other
 	my $redo = 1;
+	# search for an optimizer program
 	foreach my $exe ('optipng', 'advpng', 'advdef')
 	{
-		# glob finds the executable
+		# use which or glob to find the executable
 		my @exes = which($exe) || bsd_glob($exe);
 		# test if we have a valid result that exists and is executable
 		next unless scalar @exes == 1 && -e $exes[0] && -x _ && ! -d _;
-		# found a program
-		foreach my $path (@{$opt})
+		# found a optimizer program
+		foreach my $path (@{$files})
 		{
+			# get the command line string for execution
 			my $cmdline = cmdline($exe, $exes[0], $path);
+			# print command line on debug
 			warn $cmdline if $debug;
-			system $cmdline and warn "error on $cmdline";
+			# execute the command line string (only warn on error)
+			system $cmdline and warn "error executing $cmdline";
 		}
+		# execute more optimizers?
 		last if $redo -- > 0;
 	}
+	# EO each possible optimizer
 }
+
+###################################################################################################
+# finally output the new css
+###################################################################################################
 
 print $css->render;
 

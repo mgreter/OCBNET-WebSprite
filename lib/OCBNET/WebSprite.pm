@@ -33,7 +33,7 @@ use OCBNET::CSS3::Regex::Background qw(fromPosition);
 use List::MoreUtils qw(uniq);
 
 # define version string for cpan
-$OCBNET::WebSprite::VERSION = '0.0.1';
+$OCBNET::WebSprite::VERSION = '1.0.0';
 
 ####################################################################################################
 # Constructor - not much going on
@@ -211,16 +211,17 @@ sub create
 	# now process each selector and setup references
 	foreach my $selector (@selectors)
 	{
-		my $block = $selector->find('option', 'sprite-image');
-		# XXX - need to understand what we are doing here
-
-next unless $block;
-		if (! $selector->{'canvas'} && $block->option('css-id'))
+		# find the block where the sprite-image is declared
+		# if there is no such block, the selector is not a sprite
+		my $block = $selector->find('option', 'sprite-image') || next;
+		# check if selector is not a canvas itself and sprite has css-id
+		if (! $selector->{'canvas'} && (my $id = $block->option('css-id')))
 		{
-			die "no spriteset ", $self->{'spritesets'}->{$block->option('css-id')}
-			unless $self->{'spritesets'}->{$block->option('css-id')};
-			$selector->{'canvas'} = $self->{'spritesets'}->{$block->option('css-id')}; }
+			# connect the references spriteset to this selector
+			$selector->{'canvas'} = $self->{'spritesets'}->{$id};
+		}
 	}
+	# EO each selector
 
 	# now process each selector and setup sprites
 	foreach my $selector (@selectors)
@@ -511,8 +512,6 @@ sub write
 
 # return all spritesets in list context
 sub spritesets { values %{$_[0]->{'spritesets'}} }
-
-sub offset { return { x => 0, y => 0 } }
 
 ####################################################################################################
 ####################################################################################################

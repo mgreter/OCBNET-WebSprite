@@ -6,14 +6,13 @@
 ####################################################################################################
 package OCBNET::WebSprite::Canvas::Layout;
 ####################################################################################################
+our $VERSION = "1.0.0";
+####################################################################################################
 
 use strict;
 use warnings;
 
 ###################################################################################################
-
-# define our version string
-BEGIN { $OCBNET::WebSprite::Canvas::Layout = "0.9.0"; }
 
 # load exporter and inherit from it
 BEGIN { use Exporter qw(); our @ISA = qw(Exporter); }
@@ -57,11 +56,6 @@ sub layout
 
 		# skip not distributed sprites
 		next unless $sprite->{'distributed'};
-
-		# assertion for not repeating in both directions
-		# repeating in both directions only if enclosed
-#		if ($sprite->isRepeatX && $sprite->isRepeatY)
-#		{ die "fatal: cannot repeat in both directions"; }
 
 		# make sure we can repeat this sprite perfectly
 		if ($sprite->isRepeatX && $sprite->isFlexibleX)
