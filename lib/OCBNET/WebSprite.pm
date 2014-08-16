@@ -4,6 +4,8 @@
 ####################################################################################################
 package OCBNET::WebSprite;
 ####################################################################################################
+our $VERSION = '1.0.0';
+####################################################################################################
 
 use Carp;
 use strict;
@@ -31,9 +33,6 @@ use OCBNET::CSS3::Regex::Background qw(fromPosition);
 
 # load function from core module
 use List::MoreUtils qw(uniq);
-
-# define version string for cpan
-$OCBNET::WebSprite::VERSION = '1.0.0';
 
 ####################################################################################################
 # Constructor - not much going on
