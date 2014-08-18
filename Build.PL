@@ -84,6 +84,21 @@ sub ACTION_versionize {
 
 SUBCLASS
 
+# default image library
+# pick easiest to install
+my $gfx_module = 'GD';
+
+# check if other libraries are installed
+# if another one is available we don't need GD
+if (eval { require Graphics::Magick })
+{ $gfx_module = "Graphics::Magick" }
+elsif (eval { require Image::Magick })
+{ $gfx_module = "Image::Magick" }
+
+# if anyone knows a better way to do this, please elaborate :)
+warn "Choosen gfx-lib <$gfx_module>\n";
+
+# initialize custom module build object
 my $builder = Module::Build::Custom->new(
     module_name         => 'OCBNET::WebSprite',
     license             => 'GPL_3',
@@ -102,6 +117,7 @@ my $builder = Module::Build::Custom->new(
     requires => {
         'OCBNET::CSS3' => 0,
         'File::Slurp' => 0,
+        $gfx_module => 0,
     },
     meta_merge => {
       'meta-spec' => { version => 2 },
