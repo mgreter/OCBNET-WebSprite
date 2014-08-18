@@ -3,6 +3,11 @@ OCBNET-WebSprite
 
 Perl Package to generate spritesets from annotated css.
 
+PREREQUISITE
+============
+
+You need GD, Image::Magick or Graphics::Magick installed!
+
 INSTALL
 =======
 

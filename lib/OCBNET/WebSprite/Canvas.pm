@@ -9,7 +9,7 @@
 ####################################################################################################
 package OCBNET::WebSprite::Canvas;
 ####################################################################################################
-our $VERSION = '1.0.0';
+our $VERSION = '1.0.1';
 ####################################################################################################
 
 use strict;
@@ -182,7 +182,7 @@ sub draw
 	$self->{'image'}->Set(magick => 'png');
 	$self->{'image'}->Set(size => $self->size);
 	$self->{'image'}->ReadImage($self->{'bg'});
-	$self->{'image'}->Quantize(colorspace=>'RGB');
+	$self->{'image'}->Quantize(colorspace => 'RGB');
 
 	# process all possible areas
 	foreach my $area ($self->areas)
@@ -203,7 +203,7 @@ sub draw
 		if ($area->{'img-bg'})
 		{
 			$self->{'image'}->Composite(
-				compose => 'Over',
+				compose => 'over',
 				x => $area->left,
 				y => $area->top,
 				image => $area->{'img-bg'}
@@ -212,7 +212,7 @@ sub draw
 
 		# draw foreground on canvas
 		$self->{'image'}->Composite(
-			compose => 'Over',
+			compose => 'over',
 			x => $area->left,
 			y => $area->top,
 			image => $area->draw

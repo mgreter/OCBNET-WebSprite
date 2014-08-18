@@ -6,7 +6,7 @@
 ####################################################################################################
 package OCBNET::WebSprite::Sprite;
 ####################################################################################################
-our $VERSION = '1.0.0';
+our $VERSION = '1.0.1';
 ####################################################################################################
 
 use strict;
@@ -81,9 +81,10 @@ sub new
 		{
 			# create unique string for config
 			# this method makes the color static
-			no warnings 'uninitialized';
-			my $data = join('', values %{$self});
-			use warnings 'uninitialized';
+			my $data = join '', grep { ! ref }
+			                    grep { defined }
+			                    map { $self->{$_} }
+			                    sort keys %{$self};
 			# try to load the digest module
 			use Digest::MD5 qw(md5_hex);
 			# create a md5 hex string
@@ -98,11 +99,8 @@ sub new
 	}
 	# EO if debug
 
-	# load graphic library
-	require Graphics::Magick;
-
 	# create the image instance
-	my $sprite = new Graphics::Magick;
+	my $sprite = new OCBNET::Image;
 
 	# check if there is a filename
 	# this should probably be enforced
@@ -162,7 +160,7 @@ sub new
 	if ($self->{'bg'})
 	{
 		# create a new graphics object
-		my $bg = new Graphics::Magick;
+		my $bg = new OCBNET::Image;
 		# set the size of the graphic
 		$bg->Set(size => $self->size);
 		# init image with solid color

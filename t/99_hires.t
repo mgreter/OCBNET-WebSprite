@@ -5,7 +5,7 @@ use warnings;
 
 use Test::More tests => 21;
 BEGIN { use_ok('File::Slurp') };
-BEGIN { use_ok('Graphics::Magick') };
+BEGIN { use_ok('OCBNET::Image') };
 BEGIN { use_ok('OCBNET::WebSprite') };
 
 use OCBNET::CSS3::Styles::WebSprite;
@@ -43,10 +43,10 @@ ok -f '../result/expected-lores.png', "expected-lores.png exists";
 ok -f '../result/expected-hires.png', "expected-hires.png exists";
 ok -f '../result/generated-lores.png', "generated-lores.png exists";
 ok -f '../result/generated-hires.png', "generated-hires.png exists";
-ok my $expected_lores = Graphics::Magick->new, "instantiates expected_lores";
-ok my $expected_hires = Graphics::Magick->new, "instantiates expected_hires";
-ok my $generated_lores = Graphics::Magick->new, "instantiates generated_lores";
-ok my $generated_hires = Graphics::Magick->new, "instantiates generated_hires";
+ok my $expected_lores = OCBNET::Image->new, "instantiates expected_lores";
+ok my $expected_hires = OCBNET::Image->new, "instantiates expected_hires";
+ok my $generated_lores = OCBNET::Image->new, "instantiates generated_lores";
+ok my $generated_hires = OCBNET::Image->new, "instantiates generated_hires";
 is $expected_lores->Read('../result/expected-lores.png'), '', "read expected-lores.png";
 is $expected_hires->Read('../result/expected-hires.png'), '', "read expected-hires.png";
 is $generated_hires->Read('../result/generated-hires.png'), '', "read generated-hires.png";

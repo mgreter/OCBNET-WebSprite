@@ -7,7 +7,7 @@
 ####################################################################################################
 package OCBNET::WebSprite::Block;
 ####################################################################################################
-our $VERSION = '1.0.0';
+our $VERSION = '1.0.1';
 ####################################################################################################
 
 use strict;
@@ -20,9 +20,6 @@ use warnings;
 # ***************************************************************************************
 sub new
 {
-
-	# load graphic library
-	require Graphics::Magick;
 
 	# get package name and parent
 	my ($pckg, $parent) = @_;
@@ -48,8 +45,8 @@ sub new
 		'parent' => $parent,
 
 		# create an empty image
-		# 'image' => new Image::Magick
-		'image' => new Graphics::Magick
+		# 'image' => new OCBNET::Image
+		'image' => new OCBNET::Image
 
 	};
 
