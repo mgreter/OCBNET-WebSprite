@@ -18,18 +18,30 @@ provides:
   OCBNET::CSS3::Styles::WebSprite:
     file: lib/OCBNET/CSS3/Styles/WebSprite.pm
     version: v1.0.0
+  OCBNET::Image:
+    file: lib/OCBNET/Image.pm
+    version: v1.0.1
+  OCBNET::Image::GD:
+    file: lib/OCBNET/Image/GD.pm
+    version: v1.0.1
+  OCBNET::Image::GM:
+    file: lib/OCBNET/Image/GM.pm
+    version: v1.0.1
+  OCBNET::Image::IM:
+    file: lib/OCBNET/Image/IM.pm
+    version: v1.0.1
   OCBNET::Packer::2D:
     file: lib/OCBNET/Packer/2D.pm
     version: v1.0.0
   OCBNET::WebSprite:
     file: lib/OCBNET/WebSprite.pm
-    version: v1.0.0
+    version: v1.0.1
   OCBNET::WebSprite::Block:
     file: lib/OCBNET/WebSprite/Block.pm
-    version: v1.0.0
+    version: v1.0.1
   OCBNET::WebSprite::Canvas:
     file: lib/OCBNET/WebSprite/Canvas.pm
-    version: v1.0.0
+    version: v1.0.1
   OCBNET::WebSprite::Canvas::Distribute:
     file: lib/OCBNET/WebSprite/Canvas/Distribute.pm
     version: v1.0.0
@@ -59,14 +71,15 @@ provides:
     version: v1.0.0
   OCBNET::WebSprite::Sprite:
     file: lib/OCBNET/WebSprite/Sprite.pm
-    version: v1.0.0
+    version: v1.0.1
   OCBNET::WebSprite::Stack:
     file: lib/OCBNET/WebSprite/Stack.pm
     version: v1.0.0
 requires:
   File::Slurp: 0
+  GD: 0
   OCBNET::CSS3: 0
 resources:
   license: http://www.gnu.org/licenses/gpl-3.0.txt
   repository: https://github.com/mgreter/OCBNET-WebSprite.git
-version: v1.0.0
+version: v1.0.1
