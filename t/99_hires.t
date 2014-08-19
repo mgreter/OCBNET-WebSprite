@@ -54,7 +54,7 @@ is $generated_hires->Read('../result/generated-hires.png'), '', "read generated-
 
 use File::Which;
 
-my $cmp = which('gms') ? 'gm' : which('im') ? 'im' : undef;
+my $cmp = which('gm') ? 'gm' : which('im') ? 'im' : undef;
 
 if ($cmp)
 {
