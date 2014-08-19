@@ -2,7 +2,6 @@ use 5.008;
 use strict;
 use warnings FATAL => 'all';
 use Module::Build;
-use Software::License;
 use Config;
 
 if (-d ".git") {
@@ -118,6 +117,7 @@ my $builder = Module::Build::Custom->new(
     },
     requires => {
         'OCBNET::CSS3' => 0,
+        'List::MoreUtils' => 0,
         'File::Slurp' => 0,
         $gfx_module => 0,
     },
