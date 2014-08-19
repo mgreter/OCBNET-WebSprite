@@ -88,9 +88,10 @@ SUBCLASS
 # pick easiest to install
 my $gfx_module = 'GD';
 
-# check if other libraries are installed
-# if another one is available we don't need GD
-if (eval { require Graphics::Magick })
+# check if libraries are installed
+if (eval { require GD })
+{ $gfx_module = "GD" }
+elsif (eval { require Graphics::Magick })
 { $gfx_module = "Graphics::Magick" }
 elsif (eval { require Image::Magick })
 { $gfx_module = "Image::Magick" }
@@ -112,7 +113,8 @@ my $builder = Module::Build::Custom->new(
         'Software::License' => 0
     },
     build_requires => {
-        'Test::More' => 0
+        'Test::More' => 0,
+        'File::Which' => 0
     },
     requires => {
         'OCBNET::CSS3' => 0,

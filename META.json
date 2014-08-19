@@ -16,6 +16,7 @@
    "prereqs" : {
       "build" : {
          "requires" : {
+            "File::Which" : "0",
             "Test::More" : "0"
          }
       },
@@ -44,7 +45,7 @@
       },
       "OCBNET::Image::GD" : {
          "file" : "lib/OCBNET/Image/GD.pm",
-         "version" : "v1.0.1"
+         "version" : "v1.0.2"
       },
       "OCBNET::Image::GM" : {
          "file" : "lib/OCBNET/Image/GM.pm",
@@ -60,7 +61,7 @@
       },
       "OCBNET::WebSprite" : {
          "file" : "lib/OCBNET/WebSprite.pm",
-         "version" : "v1.0.1"
+         "version" : "v1.0.2"
       },
       "OCBNET::WebSprite::Block" : {
          "file" : "lib/OCBNET/WebSprite/Block.pm",
@@ -126,5 +127,5 @@
          "web" : "https://github.com/mgreter/OCBNET-WebSprite"
       }
    },
-   "version" : "v1.0.1"
+   "version" : "v1.0.2"
 }

@@ -4,7 +4,7 @@
 ####################################################################################################
 package OCBNET::Image::GD;
 ####################################################################################################
-our $VERSION = '1.0.1';
+our $VERSION = '1.0.2';
 ####################################################################################################
 
 use Carp;
@@ -259,9 +259,9 @@ sub Crop
 	# get coordinates from options
 	my $x = $options{'x'} || 0;
 	my $y = $options{'y'} || 0;
-	# get dimensions from options or default
-	my $width = $options{'width'} || $image->width;
-	my $height = $options{'height'} || $image->height;
+	# fetch the image dimensions or defaults to rest
+	my $width = $options{'width'} || $image->width - $x;
+	my $height = $options{'height'} || $image->height - $y;
 
 	# create a new image for cropped section
 	my $crop = GD::Image->new($width, $height, 1);

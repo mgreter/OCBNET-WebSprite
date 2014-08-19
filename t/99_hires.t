@@ -52,13 +52,33 @@ is $expected_hires->Read('../result/expected-hires.png'), '', "read expected-hir
 is $generated_hires->Read('../result/generated-hires.png'), '', "read generated-hires.png";
 is $generated_hires->Read('../result/generated-hires.png'), '', "read generated-hires.png";
 
-# use gm compare to create equality metrics to check if generated image is correct
-my $compare_lores = `gm compare -metric mse ../result/expected-lores.png ../result/generated-lores.png`;
-warn "lores compare:\n", $compare_lores if scalar(() = $compare_lores =~ m/\:\s*0?\.0/g) != 5;
-is scalar(() = $compare_lores =~ m/\:\s*0?\.0/g), 5, "generated image-lores matches expected";
-my $compare_hires = `gm compare -metric mse ../result/expected-hires.png ../result/generated-hires.png`;
-warn "hires compare:\n", $compare_hires if scalar(() = $compare_hires =~ m/\:\s*0?\.0/g) != 5;
-is scalar(() = $compare_hires =~ m/\:\s*0?\.0/g), 5, "generated image-hires matches expected";
+use File::Which;
+
+my $cmp = which('gms') ? 'gm' : which('im') ? 'im' : undef;
+
+if ($cmp)
+{
+	# use gm compare to create equality metrics to check if generated image is correct
+	my $compare_lores = `gm compare -metric mse ../result/expected-lores.png ../result/generated-lores.png`;
+	warn "lores compare:\n", $compare_lores if scalar(() = $compare_lores =~ m/\:\s*0?\.0/g) != 5;
+	is scalar(() = $compare_lores =~ m/\:\s*0?\.0/g), 5, "generated image-lores matches expected";
+	my $compare_hires = `gm compare -metric mse ../result/expected-hires.png ../result/generated-hires.png`;
+	warn "hires compare:\n", $compare_hires if scalar(() = $compare_hires =~ m/\:\s*0?\.0/g) != 5;
+	is scalar(() = $compare_hires =~ m/\:\s*0?\.0/g), 5, "generated image-hires matches expected";
+}
+elsif(eval { require GD })
+{
+	my $image1 = GD::Image->new('../result/expected-lores.png');
+	my $image2 = GD::Image->new('../result/generated-lores.png');
+	is $image1->compare($image2) & GD::GD_CMP_IMAGE(), 0, "generated image-lores matches expected";
+	my $image3 = GD::Image->new('../result/expected-hires.png');
+	my $image4 = GD::Image->new('../result/generated-hires.png');
+	is $image3->compare($image4) & GD::GD_CMP_IMAGE(), 0, "generated image-hires matches expected";
+}
+else
+{
+	warn "No graphics implementation found!";
+}
 
 # render the changed stylesheet
 write_file('../result/sprites.css', $rv->render);
