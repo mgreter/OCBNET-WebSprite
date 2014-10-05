@@ -32,10 +32,13 @@ sub Read
 {
 
 	# get input arguments
-	my ($pkg, $path) = @_;
+	my ($self, $path) = @_;
+
+	# instantiate object of called as constructor
+	$self = bless {}, $self unless ref $self;
 
 	# initialize a new image from the file path
-	my $self->{'image'} = GD::Image->new($path);
+	$self->{'image'} = GD::Image->new($path);
 	# implement proper error handling here
 
 	# true color image with alpha channel
