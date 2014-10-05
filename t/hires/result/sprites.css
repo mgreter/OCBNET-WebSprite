@@ -1,0 +1,3673 @@
+/*****************************************************************************/
+/* Box IDs for sprites
+/*****************************************************************************/
+
+.cf .sprite,
+.player .sprite
+{
+	/* sprite: lores url(../result/expected-lores.png) */
+
+	;/* \/ added by WebSprite \/ */
+	background-image: url("../result/expected-lores.png");
+	background-repeat: no-repeat;
+	/* /\ added by WebSprite /\ */
+}
+
+.cf .box
+{
+	padding: 5px;
+	/* css-id: box; */
+	width: 35px; height: 35px;
+}
+
+.cf .flex-x
+{
+	padding: 5px;
+	/* css-id: flex-x; */
+	width: 35px; min-height: 35px;
+}
+
+.cf .flex-y
+{
+	padding: 5px;
+	/* css-id: flex-y; */
+	min-width: 35px; height: 35px;
+}
+
+.cf .flex-xy
+{
+	padding: 5px;
+	/* css-id: flex-xy; */
+	min-height: 35px; min-width: 35px;
+}
+
+/*****************************************************************************/
+/* Fixed WH                                                                  */
+/*****************************************************************************/
+
+.cf DIV.fixed-a
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -16px -208px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.fixed-b
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -63px -208px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.fixed-right-a
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -110px -208px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.fixed-right-b
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -157px -208px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.fixed-bottom-a
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -204px -208px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.fixed-bottom-b
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -251px -208px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.fixed-right-bottom-a
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: 31px 31px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.fixed-right-bottom-b
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -16px -255px;
+	/* /\ added by WebSprite /\ */
+	}
+
+/*****************************************************************************/
+/* Flexible H                                                                */
+/*****************************************************************************/
+
+.cf DIV.flexible-y-a
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -16px -1675px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-b
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -63px -1675px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-right-a
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: 31px -1675px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-right-b
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -110px -1675px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-bottom-a
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -1355px bottom;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-bottom-b
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -1402px bottom;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-right-bottom-a
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -1449px bottom;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-right-bottom-b
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -1496px bottom;
+	/* /\ added by WebSprite /\ */
+	}
+
+/*****************************************************************************/
+/* Flexible W                                                                */
+/*****************************************************************************/
+
+.cf DIV.flexible-x-right-a
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: right -1299px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-right-b
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: right -1346px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-a
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -1731px -16px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-b
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -1731px -63px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-bottom-a
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -1731px 31px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-bottom-b
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -1731px -110px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-right-bottom-a
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: right -1393px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-right-bottom-b
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: right -1440px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+/*****************************************************************************/
+/* Flexible WH                                                               */
+/*****************************************************************************/
+
+.cf DIV.flexible-a
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -1731px -1675px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-b
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-color: rgba(255, 0, 0, 0.125);
+	border-color: rgba(96, 0, 0, 0.875);
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-right-a
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-color: rgba(255, 0, 0, 0.125);
+	border-color: rgba(96, 0, 0, 0.875);
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-right-b
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	border-color: rgba(96, 0, 0, 0.875);
+	background-color: rgba(255, 0, 0, 0.125);
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-bottom-a
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-color: rgba(255, 0, 0, 0.125);
+	border-color: rgba(96, 0, 0, 0.875);
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-bottom-b
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	border-color: rgba(96, 0, 0, 0.875);
+	background-color: rgba(255, 0, 0, 0.125);
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-right-bottom-a
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	border-color: rgba(96, 0, 0, 0.875);
+	background-color: rgba(255, 0, 0, 0.125);
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-right-bottom-b
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-color: rgba(255, 0, 0, 0.125);
+	border-color: rgba(96, 0, 0, 0.875);
+	/* /\ added by WebSprite /\ */
+	}
+
+/*****************************************************************************/
+/* Fixed WH - Repeat X                                                       */
+/*****************************************************************************/
+
+.cf DIV.repeat-x-a
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -63px -255px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-x-b
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -110px -255px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-x-right-a
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -157px -255px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-x-right-b
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -204px -255px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-x-bottom-a
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -251px -255px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-x-bottom-b
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -310px -16px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-x-right-bottom-a
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -310px -63px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-x-right-bottom-b
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -310px -110px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+/*****************************************************************************/
+/* Fixed WH - Repeat Y                                                       */
+/*****************************************************************************/
+
+.cf DIV.repeat-y-a
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -310px -157px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-y-b
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -310px -204px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-y-right-a
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -310px -251px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-y-right-b
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -16px -302px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-y-bottom-a
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -63px -302px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-y-bottom-b
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -110px -302px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-y-right-bottom-a
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -157px -302px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-y-right-bottom-b
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -204px -302px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+/*****************************************************************************/
+/* Fixed WH - Repeat XY                                                      */
+/*****************************************************************************/
+
+.cf DIV.repeat-xy-a
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -251px -302px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-xy-b
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -298px -302px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-xy-right-a
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -357px -16px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-xy-right-b
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -357px -63px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-xy-bottom-a
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -357px -110px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-xy-bottom-b
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -357px -157px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-xy-right-bottom-a
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -357px -204px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.repeat-xy-right-bottom-b
+{
+	/* css-ref: box, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -357px -251px;
+	/* /\ added by WebSprite /\ */
+	}
+/*****************************************************************************/
+/* Flexible H - Repeat X                                                     */
+/*****************************************************************************/
+
+.cf DIV.flexible-y-repeat-x-a
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -415px 5px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-x-b
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -462px 5px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-x-right-a
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -509px 5px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-x-right-b
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -556px 5px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-x-bottom-a
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -1543px bottom;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-x-bottom-b
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -1590px bottom;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-x-right-bottom-a
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -1637px bottom;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-x-right-bottom-b
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -1684px bottom;
+	/* /\ added by WebSprite /\ */
+	}
+
+/*****************************************************************************/
+/* Flexible H - Repeat Y                                                     */
+/*****************************************************************************/
+
+.cf DIV.flexible-y-repeat-y-a
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-repeat: repeat-y;
+	background-position: -603px 5px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-y-b
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-repeat: repeat-y;
+	background-position: -650px 5px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-y-right-a
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -697px 5px;
+	background-repeat: repeat-y;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-y-right-b
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -744px 5px;
+	background-repeat: repeat-y;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-y-bottom-a
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-repeat: repeat-y;
+	background-position: -979px bottom;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-y-bottom-b
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-repeat: repeat-y;
+	background-position: -1026px bottom;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-y-right-bottom-a
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-repeat: repeat-y;
+	background-position: -1073px bottom;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-y-right-bottom-b
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-repeat: repeat-y;
+	background-position: -1120px bottom;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+
+/*****************************************************************************/
+/* Flexible H - Repeat Y                                                     */
+/*****************************************************************************/
+
+.cf DIV.flexible-y-repeat-xy-a
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -791px 5px;
+	background-repeat: repeat-y;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-xy-b
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-repeat: repeat-y;
+	background-position: -838px 5px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-xy-right-a
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -885px 5px;
+	background-repeat: repeat-y;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-xy-right-b
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-repeat: repeat-y;
+	background-position: -932px 5px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-xy-bottom-a
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -1167px bottom;
+	background-repeat: repeat-y;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-xy-bottom-b
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -1214px bottom;
+	background-repeat: repeat-y;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-xy-right-bottom-a
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -1261px bottom;
+	background-repeat: repeat-y;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-y-repeat-xy-right-bottom-b
+{
+	/* css-ref: flex-x, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-repeat: repeat-y;
+	background-position: -1308px bottom;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+/*****************************************************************************/
+/* Flexible W - Repeat X                                                     */
+/*****************************************************************************/
+
+.cf DIV.flexible-x-repeat-x-a
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: 5px -547px;
+	background-repeat: repeat-x;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-x-b
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-repeat: repeat-x;
+	background-position: 5px -594px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-x-right-a
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: right -923px;
+	background-repeat: repeat-x;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-x-right-b
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-repeat: repeat-x;
+	background-position: right -970px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-x-bottom-a
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-repeat: repeat-x;
+	background-position: 5px -641px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-x-bottom-b
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-repeat: repeat-x;
+	background-position: 5px -688px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-x-right-bottom-a
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: right -1017px;
+	background-repeat: repeat-x;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-x-right-bottom-b
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-repeat: repeat-x;
+	background-position: right -1064px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+/*****************************************************************************/
+/* Flexible W - Repeat Y                                                     */
+/*****************************************************************************/
+
+.cf DIV.flexible-x-repeat-y-a
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: 5px -359px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-y-b
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: 5px -406px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-y-right-a
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: right -1487px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-y-right-b
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: right -1534px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-y-bottom-a
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: 5px -453px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-y-bottom-b
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: 5px -500px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-y-right-bottom-a
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: right -1581px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-y-right-bottom-b
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: right -1628px;
+	/* /\ added by WebSprite /\ */
+	}
+
+
+/*****************************************************************************/
+/* Flexible W - Repeat XY                                                    */
+/*****************************************************************************/
+
+.cf DIV.flexible-x-repeat-xy-a
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-repeat: repeat-x;
+	background-position: 5px -735px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-xy-b
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-repeat: repeat-x;
+	background-position: 5px -782px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-xy-right-a
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-repeat: repeat-x;
+	background-position: right -1111px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-xy-right-b
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-repeat: repeat-x;
+	background-position: right -1158px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-xy-bottom-a
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-repeat: repeat-x;
+	background-position: 5px -829px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-xy-bottom-b
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: 5px -876px;
+	background-repeat: repeat-x;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-xy-right-bottom-a
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: right -1205px;
+	background-repeat: repeat-x;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-x-repeat-xy-right-bottom-b
+{
+	/* css-ref: flex-y, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-repeat: repeat-x;
+	background-position: right -1252px;
+	/* /\ added by WebSprite /\ */
+	}
+
+/*****************************************************************************/
+/* Flexible - Repeat X                                                       */
+/*****************************************************************************/
+
+.cf DIV.flexible-repeat-x-a
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-color: rgba(255, 0, 0, 0.125);
+	border-color: rgba(96, 0, 0, 0.875);
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-repeat-x-b
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-color: rgba(255, 0, 0, 0.125);
+	border-color: rgba(96, 0, 0, 0.875);
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-repeat-x-right-a
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	border-color: rgba(96, 0, 0, 0.875);
+	background-color: rgba(255, 0, 0, 0.125);
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-repeat-x-right-b
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	border-color: rgba(96, 0, 0, 0.875);
+	background-color: rgba(255, 0, 0, 0.125);
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-repeat-x-bottom-a
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-color: rgba(255, 0, 0, 0.125);
+	border-color: rgba(96, 0, 0, 0.875);
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-repeat-x-bottom-b
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	border-color: rgba(96, 0, 0, 0.875);
+	background-color: rgba(255, 0, 0, 0.125);
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-repeat-x-right-bottom-a
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	border-color: rgba(96, 0, 0, 0.875);
+	background-color: rgba(255, 0, 0, 0.125);
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-repeat-x-right-bottom-b
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-color: rgba(255, 0, 0, 0.125);
+	border-color: rgba(96, 0, 0, 0.875);
+	/* /\ added by WebSprite /\ */
+	}
+
+/*****************************************************************************/
+/* Flexible - Repeat Y                                                       */
+/*****************************************************************************/
+
+.cf DIV.flexible-repeat-y-a
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	border-color: rgba(96, 0, 0, 0.875);
+	background-color: rgba(255, 0, 0, 0.125);
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-repeat-y-b
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	border-color: rgba(96, 0, 0, 0.875);
+	background-color: rgba(255, 0, 0, 0.125);
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-repeat-y-right-a
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	border-color: rgba(96, 0, 0, 0.875);
+	background-color: rgba(255, 0, 0, 0.125);
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-repeat-y-right-b
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-color: rgba(255, 0, 0, 0.125);
+	border-color: rgba(96, 0, 0, 0.875);
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-repeat-y-bottom-a
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	border-color: rgba(96, 0, 0, 0.875);
+	background-color: rgba(255, 0, 0, 0.125);
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-repeat-y-bottom-b
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-color: rgba(255, 0, 0, 0.125);
+	border-color: rgba(96, 0, 0, 0.875);
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-repeat-y-right-bottom-a
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	border-color: rgba(96, 0, 0, 0.875);
+	background-color: rgba(255, 0, 0, 0.125);
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.flexible-repeat-y-right-bottom-b
+{
+	/* css-ref: flex-xy, lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	border-color: rgba(96, 0, 0, 0.875);
+	background-color: rgba(255, 0, 0, 0.125);
+	/* /\ added by WebSprite /\ */
+	}
+
+/*****************************************************************************/
+/* Simple sprite example                                                     */
+/*****************************************************************************/
+
+.cf DIV.sprite-flex-left
+{
+	padding: 4px 5px;
+	width: 53px; height: 45px;
+	/* css-ref: lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -157px -1677px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+.cf DIV.sprite-flex-left.repeat-x
+{
+	padding: 4px 5px;
+	width: 53px; height: 45px;
+	/* css-ref: lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -16px -98px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+.cf DIV.sprite-flex-left.repeat-y
+{
+	padding: 4px 5px;
+	width: 53px; height: 45px;
+	/* css-ref: lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -81px -98px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.sprite-flex-top
+{
+	padding: 4px 5px;
+	width: 53px; height: 45px;
+	/* css-ref: lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -222px -1680px;
+	/* /\ added by WebSprite /\ */
+	}
+.cf DIV.sprite-flex-top.repeat-x
+{
+	padding: 4px 5px;
+	width: 53px; height: 45px;
+	/* css-ref: lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -180px -16px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+.cf DIV.sprite-flex-top.repeat-y
+{
+	padding: 4px 5px;
+	width: 53px; height: 45px;
+	/* css-ref: lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -180px -71px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.sprite-flex-right
+{
+	padding: 4px 5px;
+	width: 53px; height: 45px;
+	/* css-ref: lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: 50px -16px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+.cf DIV.sprite-flex-right.repeat-x
+{
+	padding: 4px 5px;
+	width: 53px; height: 45px;
+	/* css-ref: lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -16px -153px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+.cf DIV.sprite-flex-right.repeat-y
+{
+	padding: 4px 5px;
+	width: 53px; height: 45px;
+	/* css-ref: lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -81px -153px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.sprite-flex-bottom
+{
+	padding: 4px 5px;
+	width: 53px; height: 45px;
+	/* css-ref: lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -16px 41px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+.cf DIV.sprite-flex-bottom.repeat-x
+{
+	padding: 4px 5px;
+	width: 53px; height: 45px;
+	/* css-ref: lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -146px -153px;
+	/* /\ added by WebSprite /\ */
+	}
+.cf DIV.sprite-flex-bottom.repeat-y
+{
+	padding: 4px 5px;
+	width: 53px; height: 45px;
+	/* css-ref: lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -245px -16px;
+	/* /\ added by WebSprite /\ */
+	}
+
+.cf DIV.sprite-flex-bottom-right
+{
+	padding: 4px 5px;
+	width: 53px; height: 45px;
+	/* css-ref: lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: 51px -71px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+.cf DIV.sprite-flex-bottom-right.repeat-x
+{
+	padding: 4px 5px;
+	width: 53px; height: 45px;
+	/* css-ref: lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -245px -71px;
+	/* /\ added by WebSprite /\ */
+	}
+.cf DIV.sprite-flex-bottom-right.repeat-y
+{
+	padding: 4px 5px;
+	width: 53px; height: 45px;
+	/* css-ref: lores; */
+
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -245px -126px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+	}
+
+/*****************************************************************************/
+/* Player button example                                                     */
+/*****************************************************************************/
+
+A.player
+{
+	width: 200px;
+	height: 150px;
+	display: block;
+	position: relative;
+	border: 3px solid #339999;
+	background-color: #CCCCCC;
+}
+
+A.player .icon-play-big
+{
+	/*
+		css-ref: lores;
+	*/
+	width: 60px;
+	height: 60px;
+	display: block;
+	position: absolute;
+	top: 50%; left: 50%;
+	padding: 10px;
+	margin-top: -30px;
+	margin-left: -30px;
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -16px -16px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+}
+
+A.player:focus .icon-play-big,
+A.player:hover .icon-play-big
+{
+	/*
+		css-ref: lores;
+	*/
+	padding: 10px;
+	width: 60px; height: 60px;
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -98px -16px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+}
+
+A.record
+{
+	float: left;
+	color: #FFFFFF;
+	overflow: hidden;
+	margin: 20px 0px;
+	padding: 4px 10px;
+	border-radius: 5px;
+	background-color: #CC00CC;
+}
+
+A.record SPAN
+{
+	float: left;
+}
+
+A.record SPAN.icon-record
+{
+	/*
+		css-ref: lores;
+	*/
+	margin: 5px 5px 5px 0px;
+	width: 10px; height: 10px;
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -358px -299px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+}
+
+A.record-play
+{
+	float: left;
+	color: #FFFFFF;
+	display: block;
+	overflow: hidden;
+	margin: 20px 0px;
+	padding: 4px 10px;
+	border-radius: 5px;
+	background-color: #CC00CC;
+}
+
+A.record-play SPAN
+{
+	float: left;
+}
+
+A.record-play SPAN.icon-record
+{
+	/*
+		css-ref: lores;
+	*/
+	vertical-align: bottom;
+	display: inline-block;
+	margin: 5px 5px 5px 0px;
+	width: 10px; height: 10px;
+
+	;/* \/ added by WebSprite \/ */
+	background-size: 1750px 1694px;
+	background-position: -358px -299px;
+	/* /\ added by WebSprite /\ */
+}
+
+A.button
+{
+	margin-right: 20px;
+}
+
+A.button:last-child
+{
+	margin-right: 0px;
+}
+
+A:focus SPAN.icon-record,
+A:hover SPAN.icon-record
+{
+	/*
+		css-ref: lores;
+	*/
+	width: 10px; height: 10px;
+
+	;/* \/ added by WebSprite \/ */
+	background-position: -371px -298px;
+	background-size: 1750px 1694px;
+	/* /\ added by WebSprite /\ */
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.05),
+only screen and (   min--moz-device-pixel-ratio: 1.05),
+only screen and (   -moz-min-device-pixel-ratio: 1.05),
+only screen and (     -o-min-device-pixel-ratio: 21/20),
+only screen and (        min-device-pixel-ratio: 1.05),
+only screen and (                min-resolution: 1.05dppx)
+{
+
+	.cf .sprite,
+	.player .sprite
+	{
+		/*
+			css-id: hires;
+			sprite-id: hires;
+			sprite-image: url(../result/expected-hires.png);
+		*/
+
+		;/* \/ added by WebSprite \/ */
+		background-repeat: no-repeat;
+		background-image: url("../result/expected-hires.png");
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.fixed-a
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -16px -1652px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.fixed-b
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -63px -1647px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.fixed-right-a
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: 31px -16px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.fixed-right-b
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: 31px -63px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.fixed-bottom-a
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -16px 31px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.fixed-bottom-b
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -63px 31px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.fixed-right-bottom-a
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: 31px 31px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.fixed-right-bottom-b
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: 31px -110px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	/*****************************************************************************/
+	/* Flexible H                                                                */
+	/*****************************************************************************/
+
+	.cf DIV.flexible-y-a
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -110px -1647px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-b
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -157px -1647px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-right-a
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: 31px -1647px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-right-b
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -204px -1647px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-bottom-a
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -1327px bottom;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-bottom-b
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -1374px bottom;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-right-bottom-a
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -1421px bottom;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-right-bottom-b
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -1468px bottom;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	/*****************************************************************************/
+	/* Flexible W                                                                */
+	/*****************************************************************************/
+
+	.cf DIV.flexible-x-right-a
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: right -1271px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-right-b
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: right -1318px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-a
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -1703px -16px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-b
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -1703px -63px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-bottom-a
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -1703px 31px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-bottom-b
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -1703px -110px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-right-bottom-a
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: right -1365px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-right-bottom-b
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: right -1412px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	/*****************************************************************************/
+	/* Flexible WH                                                               */
+	/*****************************************************************************/
+
+	.cf DIV.flexible-a
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -1703px -1647px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-b
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		border-color: rgba(96, 0, 0, 0.875);
+		background-color: rgba(255, 0, 0, 0.125);
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-right-a
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		border-color: rgba(96, 0, 0, 0.875);
+		background-color: rgba(255, 0, 0, 0.125);
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-right-b
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-color: rgba(255, 0, 0, 0.125);
+		border-color: rgba(96, 0, 0, 0.875);
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-bottom-a
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-color: rgba(255, 0, 0, 0.125);
+		border-color: rgba(96, 0, 0, 0.875);
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-bottom-b
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		border-color: rgba(96, 0, 0, 0.875);
+		background-color: rgba(255, 0, 0, 0.125);
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-right-bottom-a
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-color: rgba(255, 0, 0, 0.125);
+		border-color: rgba(96, 0, 0, 0.875);
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-right-bottom-b
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		border-color: rgba(96, 0, 0, 0.875);
+		background-color: rgba(255, 0, 0, 0.125);
+		/* /\ added by WebSprite /\ */
+	}
+
+	/*****************************************************************************/
+	/* Fixed WH - Repeat X                                                       */
+	/*****************************************************************************/
+
+	.cf DIV.repeat-x-a
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -211px -71px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-x-b
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -211px -118px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-x-right-a
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -16px -181px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-x-right-b
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -63px -181px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-x-bottom-a
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -110px -181px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-x-bottom-b
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -157px -181px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-x-right-bottom-a
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -204px -181px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-x-right-bottom-b
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -16px -228px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	/*****************************************************************************/
+	/* Fixed WH - Repeat Y                                                       */
+	/*****************************************************************************/
+
+	.cf DIV.repeat-y-a
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -63px -228px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-y-b
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -110px -228px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-y-right-a
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -157px -228px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-y-right-b
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -204px -228px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-y-bottom-a
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -276px -16px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-y-bottom-b
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -276px -63px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-y-right-bottom-a
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -276px -110px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-y-right-bottom-b
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -276px -157px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	/*****************************************************************************/
+	/* Fixed WH - Repeat XY                                                       */
+	/*****************************************************************************/
+
+	.cf DIV.repeat-xy-a
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -276px -204px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-xy-b
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -16px -275px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-xy-right-a
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -63px -275px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-xy-right-b
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -110px -275px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-xy-bottom-a
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -157px -275px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-xy-bottom-b
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -204px -275px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-xy-right-bottom-a
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -251px -275px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.repeat-xy-right-bottom-b
+	{
+		/* css-ref: box, hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -323px -16px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	/*****************************************************************************/
+	/* Flexible H - Repeat X                                                     */
+	/*****************************************************************************/
+
+	.cf DIV.flexible-y-repeat-x-a
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -387px 5px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-x-b
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -434px 5px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-x-right-a
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -481px 5px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-x-right-b
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -528px 5px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-x-bottom-a
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -1515px bottom;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-x-bottom-b
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -1562px bottom;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-x-right-bottom-a
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -1609px bottom;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-x-right-bottom-b
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -1656px bottom;
+		/* /\ added by WebSprite /\ */
+	}
+
+	/*****************************************************************************/
+	/* Flexible H - Repeat Y                                                     */
+	/*****************************************************************************/
+
+	.cf DIV.flexible-y-repeat-y-a
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-repeat: repeat-y;
+		background-position: -575px 5px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-y-b
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-repeat: repeat-y;
+		background-position: -622px 5px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-y-right-a
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-repeat: repeat-y;
+		background-position: -669px 5px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-y-right-b
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-repeat: repeat-y;
+		background-position: -716px 5px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-y-bottom-a
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -951px bottom;
+		background-repeat: repeat-y;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-y-bottom-b
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-repeat: repeat-y;
+		background-position: -998px bottom;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-y-right-bottom-a
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -1045px bottom;
+		background-repeat: repeat-y;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-y-right-bottom-b
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -1092px bottom;
+		background-repeat: repeat-y;
+		/* /\ added by WebSprite /\ */
+	}
+
+	/*****************************************************************************/
+	/* Flexible H - Repeat XY                                                     */
+	/*****************************************************************************/
+
+	.cf DIV.flexible-y-repeat-xy-a
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -763px 5px;
+		background-repeat: repeat-y;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-xy-b
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -810px 5px;
+		background-repeat: repeat-y;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-xy-right-a
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -857px 5px;
+		background-repeat: repeat-y;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-xy-right-b
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-repeat: repeat-y;
+		background-position: -904px 5px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-xy-bottom-a
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -1139px bottom;
+		background-repeat: repeat-y;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-xy-bottom-b
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -1186px bottom;
+		background-repeat: repeat-y;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-xy-right-bottom-a
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-repeat: repeat-y;
+		background-position: -1233px bottom;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-y-repeat-xy-right-bottom-b
+	{
+		/* css-ref: flex-x, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -1280px bottom;
+		background-repeat: repeat-y;
+		/* /\ added by WebSprite /\ */
+	}
+
+	/*****************************************************************************/
+	/* Flexible W - Repeat X                                                     */
+	/*****************************************************************************/
+
+	.cf DIV.flexible-x-repeat-x-a
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-repeat: repeat-x;
+		background-position: 5px -519px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-x-b
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-repeat: repeat-x;
+		background-position: 5px -566px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-x-right-a
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-repeat: repeat-x;
+		background-position: right -895px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-x-right-b
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-repeat: repeat-x;
+		background-position: right -942px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-x-bottom-a
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: 5px -613px;
+		background-repeat: repeat-x;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-x-bottom-b
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-repeat: repeat-x;
+		background-position: 5px -660px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-x-right-bottom-a
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-repeat: repeat-x;
+		background-position: right -989px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-x-right-bottom-b
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: right -1036px;
+		background-repeat: repeat-x;
+		/* /\ added by WebSprite /\ */
+	}
+
+	/*****************************************************************************/
+	/* Flexible W - Repeat Y                                                     */
+	/*****************************************************************************/
+
+	.cf DIV.flexible-x-repeat-y-a
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: 5px -331px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-y-b
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: 5px -378px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-y-right-a
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: right -1459px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-y-right-b
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: right -1506px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-y-bottom-a
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: 5px -425px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-y-bottom-b
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: 5px -472px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-y-right-bottom-a
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: right -1553px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-y-right-bottom-b
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: right -1600px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	/*****************************************************************************/
+	/* Flexible W - Repeat XY                                                     */
+	/*****************************************************************************/
+
+	.cf DIV.flexible-x-repeat-xy-a
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: 5px -707px;
+		background-repeat: repeat-x;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-xy-b
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-repeat: repeat-x;
+		background-position: 5px -754px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-xy-right-a
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: right -1083px;
+		background-repeat: repeat-x;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-xy-right-b
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-repeat: repeat-x;
+		background-position: right -1130px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-xy-bottom-a
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: 5px -801px;
+		background-repeat: repeat-x;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-xy-bottom-b
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: 5px -848px;
+		background-repeat: repeat-x;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-xy-right-bottom-a
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: right -1177px;
+		background-repeat: repeat-x;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-x-repeat-xy-right-bottom-b
+	{
+		/* css-ref: flex-y, hires; */
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-repeat: repeat-x;
+		background-position: right -1224px;
+		/* /\ added by WebSprite /\ */
+	}
+	/*****************************************************************************/
+	/* Flexible - Repeat X                                                       */
+	/*****************************************************************************/
+
+	.cf DIV.flexible-repeat-x-a
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		border-color: rgba(96, 0, 0, 0.875);
+		background-color: rgba(255, 0, 0, 0.125);
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-repeat-x-b
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-color: rgba(255, 0, 0, 0.125);
+		border-color: rgba(96, 0, 0, 0.875);
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-repeat-x-right-a
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-color: rgba(255, 0, 0, 0.125);
+		border-color: rgba(96, 0, 0, 0.875);
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-repeat-x-right-b
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-color: rgba(255, 0, 0, 0.125);
+		border-color: rgba(96, 0, 0, 0.875);
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-repeat-x-bottom-a
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		border-color: rgba(96, 0, 0, 0.875);
+		background-color: rgba(255, 0, 0, 0.125);
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-repeat-x-bottom-b
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-color: rgba(255, 0, 0, 0.125);
+		border-color: rgba(96, 0, 0, 0.875);
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-repeat-x-right-bottom-a
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		border-color: rgba(96, 0, 0, 0.875);
+		background-color: rgba(255, 0, 0, 0.125);
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-repeat-x-right-bottom-b
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-color: rgba(255, 0, 0, 0.125);
+		border-color: rgba(96, 0, 0, 0.875);
+		/* /\ added by WebSprite /\ */
+	}
+
+	/*****************************************************************************/
+	/* Flexible - Repeat Y                                                       */
+	/*****************************************************************************/
+
+	.cf DIV.flexible-repeat-y-a
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-color: rgba(255, 0, 0, 0.125);
+		border-color: rgba(96, 0, 0, 0.875);
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-repeat-y-b
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-color: rgba(255, 0, 0, 0.125);
+		border-color: rgba(96, 0, 0, 0.875);
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-repeat-y-right-a
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		background-color: rgba(255, 0, 0, 0.125);
+		border-color: rgba(96, 0, 0, 0.875);
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-repeat-y-right-b
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		border-color: rgba(96, 0, 0, 0.875);
+		background-color: rgba(255, 0, 0, 0.125);
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-repeat-y-bottom-a
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		border-color: rgba(96, 0, 0, 0.875);
+		background-color: rgba(255, 0, 0, 0.125);
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-repeat-y-bottom-b
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		border-color: rgba(96, 0, 0, 0.875);
+		background-color: rgba(255, 0, 0, 0.125);
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-repeat-y-right-bottom-a
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		border-color: rgba(96, 0, 0, 0.875);
+		background-color: rgba(255, 0, 0, 0.125);
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.flexible-repeat-y-right-bottom-b
+	{
+		/* css-ref: flex-xy, hires; */
+		border-left-color: #FF0000;
+		border-right-color: #FF0000;
+		border-top-color: #FF0000;
+		border-bottom-color: #FF0000;
+
+		;/* \/ added by WebSprite \/ */
+		border-color: rgba(96, 0, 0, 0.875);
+		background-color: rgba(255, 0, 0, 0.125);
+		/* /\ added by WebSprite /\ */
+	}
+
+	/*****************************************************************************/
+	/* Simple sprite example                                                     */
+	/*****************************************************************************/
+
+	.cf DIV.sprite-flex-left
+	{
+		padding: 4px 5px;
+		width: 53px; height: 45px;
+		/* css-ref: hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -251px -1649px;
+		/* /\ added by WebSprite /\ */
+	}
+	.cf DIV.sprite-flex-left.repeat-x
+	{
+		padding: 4px 5px;
+		width: 53px; height: 45px;
+		/* css-ref: hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -16px -16px;
+		/* /\ added by WebSprite /\ */
+	}
+	.cf DIV.sprite-flex-left.repeat-y
+	{
+		padding: 4px 5px;
+		width: 53px; height: 45px;
+		/* css-ref: hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -81px -16px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.sprite-flex-top
+	{
+		padding: 4px 5px;
+		width: 53px; height: 45px;
+		/* css-ref: hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -316px -1652px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+	.cf DIV.sprite-flex-top.repeat-x
+	{
+		padding: 4px 5px;
+		width: 53px; height: 45px;
+		/* css-ref: hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -16px -71px;
+		/* /\ added by WebSprite /\ */
+	}
+	.cf DIV.sprite-flex-top.repeat-y
+	{
+		padding: 4px 5px;
+		width: 53px; height: 45px;
+		/* css-ref: hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -81px -71px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.sprite-flex-right
+	{
+		padding: 4px 5px;
+		width: 53px; height: 45px;
+		/* css-ref: hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: 50px -157px;
+		/* /\ added by WebSprite /\ */
+	}
+	.cf DIV.sprite-flex-right.repeat-x
+	{
+		padding: 4px 5px;
+		width: 53px; height: 45px;
+		/* css-ref: hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -146px -16px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+	.cf DIV.sprite-flex-right.repeat-y
+	{
+		padding: 4px 5px;
+		width: 53px; height: 45px;
+		/* css-ref: hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -146px -71px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.sprite-flex-bottom
+	{
+		padding: 4px 5px;
+		width: 53px; height: 45px;
+		/* css-ref: hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -110px 41px;
+		/* /\ added by WebSprite /\ */
+	}
+	.cf DIV.sprite-flex-bottom.repeat-x
+	{
+		padding: 4px 5px;
+		width: 53px; height: 45px;
+		/* css-ref: hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 1722px 1666px;
+		background-position: -16px -126px;
+		/* /\ added by WebSprite /\ */
+	}
+	.cf DIV.sprite-flex-bottom.repeat-y
+	{
+		padding: 4px 5px;
+		width: 53px; height: 45px;
+		/* css-ref: hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -81px -126px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	.cf DIV.sprite-flex-bottom-right
+	{
+		padding: 4px 5px;
+		width: 53px; height: 45px;
+		/* css-ref: hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: 51px -212px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+	.cf DIV.sprite-flex-bottom-right.repeat-x
+	{
+		padding: 4px 5px;
+		width: 53px; height: 45px;
+		/* css-ref: hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -146px -126px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+	.cf DIV.sprite-flex-bottom-right.repeat-y
+	{
+		padding: 4px 5px;
+		width: 53px; height: 45px;
+		/* css-ref: hires; */
+
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -211px -16px;
+		background-size: 1722px 1666px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	/*****************************************************************************/
+	/* Player button example                                                     */
+	/*****************************************************************************/
+
+	A.player
+	{
+		width: 200px;
+		height: 150px;
+		display: block;
+		position: relative;
+		border: 3px solid #339999;
+		background-color: #CCCCCC;
+	}
+
+	A.player .icon-play-big
+	{
+		/*
+			css-ref: hires;
+		*/
+		width: 60px;
+		height: 60px;
+		display: block;
+		position: absolute;
+		top: 50%; left: 50%;
+		padding: 10px;
+		margin-top: -30px;
+		margin-left: -30px;
+
+		;/* \/ added by WebSprite \/ */
+		background-position: -645px -125px;
+		background-size: 3444px 3332px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	A.player:focus .icon-play-big,
+	A.player:hover .icon-play-big
+	{
+		/*
+			css-ref: hires;
+		*/
+		padding: 10px;
+		width: 60px; height: 60px;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 3444px 3332px;
+		background-position: -645px -207px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	A.record
+	{
+		float: left;
+		color: #FFFFFF;
+		overflow: hidden;
+		margin: 20px 0px;
+		padding: 4px 10px;
+		border-radius: 5px;
+		background-color: #CC00CC;
+	}
+
+	A.record SPAN
+	{
+		float: left;
+	}
+
+	A.record SPAN.icon-record
+	{
+		/*
+			css-ref: hires;
+		*/
+		margin: 5px 5px 5px 0px;
+		width: 10px; height: 10px;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 3444px 3332px;
+		background-position: -646px -290px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	A.record-play
+	{
+		float: left;
+		color: #FFFFFF;
+		display: block;
+		overflow: hidden;
+		margin: 20px 0px;
+		padding: 4px 10px;
+		border-radius: 5px;
+		background-color: #CC00CC;
+	}
+
+	A.record-play SPAN
+	{
+		float: left;
+	}
+
+	A.record-play SPAN.icon-record
+	{
+		/*
+			css-ref: hires;
+		*/
+		vertical-align: bottom;
+		display: inline-block;
+		margin: 5px 5px 5px 0px;
+		width: 10px; height: 10px;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 3444px 3332px;
+		background-position: -646px -290px;
+		/* /\ added by WebSprite /\ */
+	}
+
+	A.button
+	{
+		margin-right: 20px;
+	}
+
+	A.button:last-child
+	{
+		margin-right: 0px;
+	}
+
+	A:focus SPAN.icon-record,
+	A:hover SPAN.icon-record
+	{
+		/*
+			css-ref: hires;
+		*/
+		width: 10px; height: 10px;
+
+		;/* \/ added by WebSprite \/ */
+		background-size: 3444px 3332px;
+		background-position: -727px -125px;
+		/* /\ added by WebSprite /\ */
+	}
+
+}

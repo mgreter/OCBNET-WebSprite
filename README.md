@@ -211,7 +211,8 @@ Samples
 - [Fam Result](https://raw.githubusercontent.com/mgreter/OCBNET-WebSprite/master/t/fam/result/expected.png)
 - [Lores Result](https://raw.githubusercontent.com/mgreter/OCBNET-WebSprite/master/t/hires/result/expected-lores.png)
 - [Hires Result](https://raw.githubusercontent.com/mgreter/OCBNET-WebSprite/master/t/hires/result/expected-hires.png)
-- [Hires/Lores Demo](http://rawgit.com/mgreter/OCBNET-WebSprite/master/t/hires/demo.expected.html)
+- [Hires/Lores Demo before](http://rawgit.com/mgreter/OCBNET-WebSprite/master/t/hires/demo.expected.html)
+- [Hires/Lores Demo after](http://rawgit.com/mgreter/OCBNET-WebSprite/master/t/hires/demo.generated.html)
 
 Copyright
 ---------
