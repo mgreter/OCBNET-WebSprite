@@ -116,10 +116,11 @@ my $builder = Module::Build::Custom->new(
         'File::Which' => 0
     },
     requires => {
-		'perl' => '5.010',
+        'perl' => '5.010',
         'OCBNET::CSS3' => 0,
         'List::MoreUtils' => 0,
         'File::Slurp' => 0,
+        'MIME::Base64' => 0,
         $gfx_module => 0,
     },
     meta_merge => {

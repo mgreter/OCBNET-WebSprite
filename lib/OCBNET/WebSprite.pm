@@ -4,7 +4,7 @@
 ####################################################################################################
 package OCBNET::WebSprite;
 ####################################################################################################
-our $VERSION = '1.0.2';
+our $VERSION = '1.0.3';
 ####################################################################################################
 
 use Carp;
@@ -134,6 +134,8 @@ sub writer
 # method is responsible to read images from the disk
 # overload this method if you want to implement it different
 ####################################################################################################
+use MIME::Base64 qw(decode_base64);
+####################################################################################################
 
 sub reader
 {
@@ -141,7 +143,10 @@ sub reader
 	my ($self, $path) = @_;
 	# load module optionally
 	require File::Slurp;
-	# read the file from the disk
+	# read base64 encoded images (parse and decode base64)
+	if ($path =~ s/^\s*?data\s*:\s*([^;]+)\s*;\s*base64\s*,\s*//)
+	{ return decode_base64($path) if substr($1, 0, 6) eq 'image/'; }
+	# otherwise try to read the file from the disk
 	File::Slurp::read_file($path, { binmode => ':raw' });
 }
 

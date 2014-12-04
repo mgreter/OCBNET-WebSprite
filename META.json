@@ -31,7 +31,9 @@
             "File::Slurp" : "0",
             "GD" : "0",
             "List::MoreUtils" : "0",
-            "OCBNET::CSS3" : "0"
+            "MIME::Base64" : "0",
+            "OCBNET::CSS3" : "0",
+            "perl" : "5.010"
          }
       }
    },
