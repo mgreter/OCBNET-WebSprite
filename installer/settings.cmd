@@ -1,0 +1,3 @@
+@echo off
+
+SET RELVERSION=1.0.3.0
