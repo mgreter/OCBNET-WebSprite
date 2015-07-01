@@ -43,6 +43,13 @@ You need [Strawberry Perl](http://strawberryperl.com/) and
 [GraphicsMagick](http://www.graphicsmagick.org/download.html) on
 Windows.
 
+Windows MSI Installer [Experimental]
+-------
+
+You can download an installer for a standalone executable from:
+http://webmerge.ocbnet.ch/ocbnet-websprite/installer/
+
+
 Preface
 -------
 

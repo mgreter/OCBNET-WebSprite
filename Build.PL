@@ -17,7 +17,7 @@ my $class = Module::Build->subclass(
     code => <<'SUBCLASS' );
 
 my $re_version = qr/our\s+\$VERSION\s*=\s*[\"\']
-                    ([0-9]+\.[0-9]+\.[0-9]+(?:\-.+?)?)
+                    v?([0-9]+(?:\.[0-9])+(?:\-.+?)?)
                    [\"\']\s*\;/x;
 
 # ./Build versions
@@ -56,7 +56,7 @@ sub ACTION_versionize {
             }
         }
         unless ($tag) {
-            $tag = `git describe --abbrev=0 --always`;
+            $tag = `git describe --abbrev=0 --always --tag`;
             $tag =~ s/(?:\A\s+|\Av|\s+\z)//g;
             unless ( $tag =~ m/(\d+\.\d+\.)(\d+)(?:\-|\z)/ )
             { die "tag <$tag> invalid (\\d+.\\d+.\\d+)\n"; }
