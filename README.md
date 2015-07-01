@@ -43,6 +43,13 @@ You need [Strawberry Perl](http://strawberryperl.com/) and
 [GraphicsMagick](http://www.graphicsmagick.org/download.html) on
 Windows.
 
+Windows MSI Installer [Experimental]
+-------
+
+You can download an installer for a standalone executable from:  
+http://webmerge.ocbnet.ch/ocbnet-websprite/installer/
+
+
 Preface
 -------
 
@@ -89,18 +96,18 @@ that should be distributed.
 You must define one or multiple spritesets inside your css. Each spriteset
 must have a unique css-id. There is a `sprite` shorthand to define both
 values at once:
-```
+```css
 /* shorthand for css-id and sprite-image */
 /* sprite: spriteset url('spriteset.png'); */
 ```
 This could be equally written as:
-```
+```css
 /* use longhands */
 /* css-id: spriteset; */
 /* sprite-image: url('spriteset.png'); */
 ```
 Example input:
-```
+```css
 .sprite
 {
 	width: 35px;
@@ -114,7 +121,7 @@ Example input:
 ```
 
 Example output:
-```
+```css
 .sprite
 {
     width: 35px;
@@ -140,7 +147,7 @@ resolve the css cascade. This greatly reduces the need to repeat properties
 just for WebSprite. A common use case are width and height dimensions. This
 feature ist part of [OCBNET::CSS3](https://github.com/mgreter/OCBNET-CSS3).
 
-```
+```css
 .icon
 {
 	/* css-id: icon; */
